@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "layzer0000-synthprovenance"
+version = "0.1.0"
+description = "沿生成链记录每条合成样本的模型、提示与参数，输出溯源表"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "layzer0000" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://layzer0000.github.io"
+Repository = "https://github.com/layzer0000/synthprovenance"
+Issues = "https://github.com/layzer0000/synthprovenance/issues"
+
+[project.scripts]
+synthprovenance = "synthprovenance:main"
+
+[tool.setuptools]
+py-modules = ["synthprovenance"]
